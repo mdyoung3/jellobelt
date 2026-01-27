@@ -1,8 +1,10 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: home
-subtitle: I see pride. I see power.
+title: Home
+template: home
+subtitle: 'Web Developer extrodinare'
+updated_by: a7f289e0-7696-40e8-945d-ae606238c71a
+updated_at: 1769472682
 ---
-I see a bad-ass mother who don't take no crap off of nobody.
+Writing code. Solving problems.

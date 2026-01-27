@@ -1,0 +1,15 @@
+{{ collection:projects sort="order" }}
+<article class="project-card">
+    <img src="{{ featured_image }}" alt="{{ title }}">
+    <h3>{{ title }}</h3>
+    <p>{{ tagline }}</p>
+
+    <div class="tech-stack">
+        {{ tech_stack }}
+        <span class="badge">{{ value }}</span>
+        {{ /tech_stack }}
+    </div>
+
+    <a href="{{ url }}">View Details →</a>
+</article>
+{{ /collection:projects }}
