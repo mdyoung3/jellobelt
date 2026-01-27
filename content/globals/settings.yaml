@@ -1,17 +1,19 @@
-id: 9242876a-41c4-42f8-96f8-ac92d6025406
 title: Settings
 data:
-  site_name: 'Cool Writings'
+  site_name: 'Marc Young'
   social:
     -
-      name: Twitter
+      id: RDN5BZUU
+      name: Linkedin
       url: 'https://twitter.com/jackmcdade'
-      icon: site/social-icons/twitter.svg
+      icon: site/social-icons/linkedin-svgrepo-com.svg
     -
+      id: BC018742
       name: Github
-      url: 'https://github.com/statamic/starter-kit-cool-writings'
+      url: 'https://github.com/mdyoung3'
       icon: site/social-icons/github.svg
     -
+      id: NLmRw1O6
       name: Email
-      url: 'mailto:jack@statamic.com'
+      url: 'mailto:marcdeeyoung@proton.me'
       icon: site/social-icons/email.svg
