@@ -1,0 +1,106 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: slug_field
+            field:
+              type: slug
+              display: 'Slug Field'
+          -
+            handle: tagline
+            field:
+              type: text
+              display: Tagline
+              instructions: 'Brief one-liner about the project'
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+              instructions: 'Detailed project description'
+          -
+            handle: featured_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: gallery
+            field:
+              container: assets
+              type: assets
+              display: Gallery
+              instructions: 'Additional screenshots'
+          -
+            handle: tech_stack
+            field:
+              type: list
+              display: 'Tech Stack'
+              instructions: 'Technologies used (Laravel, Vue, etc)'
+          -
+            handle: project_url
+            field:
+              type: text
+              display: 'Project URL'
+              instructions: 'Live site URL'
+              input_type: url
+          -
+            handle: github_url
+            field:
+              type: text
+              display: 'GitHub URL'
+              input_type: url
+          -
+            handle: featured
+            field:
+              type: toggle
+              display: Featured
+              instructions: 'Show on homepage?'
+          -
+            handle: year
+            field:
+              type: text
+              display: Year
+          -
+            handle: client
+            field:
+              type: text
+              display: Client
+              instructions: 'Company/organization (optional)'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - projects
+              max_items: 1
+              listable: false
+              localizable: true
+  new_tab:
+    display: 'New Tab'
+    sections:
+      -
+        display: 'New Section'
+title: Project

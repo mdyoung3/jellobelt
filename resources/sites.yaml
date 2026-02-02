@@ -1,0 +1,4 @@
+default:
+  name: 'Marc Young'
+  url: /
+  locale: '{{ config:app:locale }}'

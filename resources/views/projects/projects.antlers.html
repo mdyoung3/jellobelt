@@ -1,0 +1,33 @@
+<article>
+    <h1>{{ title }}</h1>
+    <p class="tagline">{{ tagline }}</p>
+
+    <img src="{{ featured_image }}" alt="{{ title }}">
+
+    <div class="project-details">
+        {{ description | markdown }}
+    </div>
+
+    <div class="tech-stack">
+        <h3>Built With</h3>
+        {{ tech_stack }}
+        <span>{{ value }}</span>
+        {{ /tech_stack }}
+    </div>
+
+    {{ if project_url }}
+    <a href="{{ project_url }}">Visit Site</a>
+    {{ /if }}
+
+    {{ if github_url }}
+    <a href="{{ github_url }}">View Code</a>
+    {{ /if }}
+
+    {{ if gallery }}
+    <div class="gallery">
+        {{ gallery }}
+        <img src="{{ url }}" alt="{{ alt }}">
+        {{ /gallery }}
+    </div>
+    {{ /if }}
+</article>
